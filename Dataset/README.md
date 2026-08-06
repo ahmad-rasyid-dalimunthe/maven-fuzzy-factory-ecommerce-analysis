@@ -19,4 +19,4 @@ The dataset is transformed into analytical data marts using SQL in Google BigQue
 
 ## Entity Relationship Diagram
 
-![ERD](../Dataset/erd_data_pipeline.png)
+![ERD](../Images/entity_relationship_diagram.png)
