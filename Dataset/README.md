@@ -20,3 +20,7 @@ The dataset is transformed into analytical data marts using SQL in Google BigQue
 ## Entity Relationship Diagram
 
 ![ERD](../Images/entity_relationship_diagram.png)
+
+## Project Architecture & Data Pipeline
+
+![ERD](../Images/project_architecture_and_data_pipeline.png)
