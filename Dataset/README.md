@@ -16,3 +16,7 @@ The dataset consists of six relational tables that capture website traffic, cust
 | products | Product master data |
 
 The dataset is transformed into analytical data marts using SQL in Google BigQuery before being visualized in Looker Studio.
+
+## Entity Relationship Diagram
+
+![ERD](../Dataset/erd_data_pipeline.png)
