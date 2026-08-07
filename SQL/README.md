@@ -58,7 +58,7 @@ Data quality assessment of all six raw tables.
 
 ---
 
-## [2. Data Cleaning](02_data_cleaning.sql)
+## [2. Data Cleaning](03_data_cleaning.sql)
 
 ### Purpose
 
@@ -78,7 +78,7 @@ Clean and standardized business dimensions ready for analysis.
 
 ---
 
-## [3. Exploratory Data Analysis](03_exploratory_data_analysis.sql)
+## [3. Exploratory Data Analysis](02_exploratory_data_analysis.sql)
 
 ### Purpose
 
