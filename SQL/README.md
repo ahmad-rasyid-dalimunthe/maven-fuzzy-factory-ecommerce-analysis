@@ -58,7 +58,7 @@ Data quality assessment of all six raw tables.
 
 ---
 
-## 02_data_cleaning.sql
+## [02_data_cleaning.sql](02_data_cleaning.sql)
 
 ### Purpose
 
@@ -78,7 +78,7 @@ Clean and standardized business dimensions ready for analysis.
 
 ---
 
-## 03_exploratory_data_analysis.sql
+## [03_exploratory_data_analysis.sql](03_exploratory_data_analysis.sql)
 
 ### Purpose
 
@@ -113,7 +113,7 @@ Business insights used to define dashboard requirements and business recommendat
 
 ---
 
-## 04_mart_business_performance.sql
+## [04_mart_business_performance.sql](04_mart_business_performance.sql)
 
 ### Purpose
 
@@ -137,7 +137,7 @@ Build the Business Performance data mart used by Dashboard Page 1.
 
 ---
 
-## 05_mart_customer_funnel.sql
+## [05_mart_customer_funnel.sql](05_mart_customer_funnel.sql)
 
 ### Purpose
 
@@ -159,7 +159,7 @@ Build the Customer Funnel data mart used by Dashboard Page 2.
 
 ---
 
-## 06_mart_refund_analysis.sql
+## [06_mart_refund_analysis.sql](06_mart_refund_analysis.sql)
 
 ### Purpose
 
