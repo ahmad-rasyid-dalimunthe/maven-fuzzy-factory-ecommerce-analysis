@@ -10,7 +10,8 @@ The dashboard was developed using Google Looker Studio.
 
 ### Page 1
 Business Performance Overview
-Images/dashboard_page1_business_performance.png
+
+![Dashboard](../Images/dashboard_page1_business_performance.png)
 
 ### Page 2
 Customer Acquisition & Product Funnel
