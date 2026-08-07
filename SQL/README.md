@@ -12,22 +12,22 @@ The scripts follow a structured analytics workflow, beginning with raw data expl
 Raw Dataset
      │
      ▼
-01_data_understanding.sql
+data_understanding.sql
      │
      ▼
-02_data_cleaning.sql
+data_cleaning.sql
      │
      ▼
-03_exploratory_data_analysis.sql
+exploratory_data_analysis.sql
      │
      ▼
-04_mart_business_performance.sql
+mart_business_performance.sql
      │
      ▼
-05_mart_customer_funnel.sql
+mart_customer_funnel.sql
      │
      ▼
-06_mart_refund_analysis.sql
+mart_refund_analysis.sql
      │
      ▼
 Google Looker Studio Dashboard
@@ -37,7 +37,7 @@ Google Looker Studio Dashboard
 
 # SQL Files
 
-## [01_data_understanding.sql](01_data_understanding.sql)
+## [1. Data Understanding](01_data_understanding.sql)
 
 ### Purpose
 
@@ -58,7 +58,7 @@ Data quality assessment of all six raw tables.
 
 ---
 
-## [02_data_cleaning.sql](02_data_cleaning.sql)
+## [2. Data Cleaning](02_data_cleaning.sql)
 
 ### Purpose
 
@@ -78,7 +78,7 @@ Clean and standardized business dimensions ready for analysis.
 
 ---
 
-## [03_exploratory_data_analysis.sql](03_exploratory_data_analysis.sql)
+## [3. Exploratory Data Analysis](03_exploratory_data_analysis.sql)
 
 ### Purpose
 
@@ -113,7 +113,7 @@ Business insights used to define dashboard requirements and business recommendat
 
 ---
 
-## [04_mart_business_performance.sql](04_mart_business_performance.sql)
+## [4. Mart Business Performance](04_mart_business_performance.sql)
 
 ### Purpose
 
@@ -137,7 +137,7 @@ Build the Business Performance data mart used by Dashboard Page 1.
 
 ---
 
-## [05_mart_customer_funnel.sql](05_mart_customer_funnel.sql)
+## [5. Mart Customer Funnel](05_mart_customer_funnel.sql)
 
 ### Purpose
 
@@ -159,7 +159,7 @@ Build the Customer Funnel data mart used by Dashboard Page 2.
 
 ---
 
-## [06_mart_refund_analysis.sql](06_mart_refund_analysis.sql)
+## [6. Mart Refund Analysis](06_mart_refund_analysis.sql)
 
 ### Purpose
 
