@@ -1,37 +1,49 @@
-# Dashboard Overview
+# 📊 Interactive Dashboard
 
-## Dashboard Objective
+This folder contains the interactive business intelligence dashboard developed in **Google Looker Studio** using curated data marts built in **Google BigQuery**.
 
-This interactive dashboard provides business insights into Maven Fuzzy Factory's e-commerce performance across three key analytical areas:
+The dashboard transforms raw transactional e-commerce data into actionable business insights across three analytical areas:
 
 - Business Performance
-- Customer Funnel
+- Customer Funnel Analysis
 - Refund Analysis
-
-The dashboard was developed in Google Looker Studio using curated BigQuery data marts.
-
-# Interactive Dashboard
-## Live Dashboard
-
-👉 [https://datastudio.google.com/reporting/90f69ea2-54da-4abb-a221-e1eeea32f6f0]
 
 ---
 
-# Dashboard Pages
+# Dashboard Preview
 
-## Page 1 — Business Performance
+> Full Interactive Dashboard:
+> (https://datastudio.google.com/reporting/90f69ea2-54da-4abb-a221-e1eeea32f6f0)
 
-### Objective
+![Dashboard Overview](dashboard_preview.png)
 
-Monitor overall business performance by analyzing revenue, profitability, acquisition channels, product contribution, and sales trends.
+---
 
-### KPIs
+# Dashboard Structure
 
-- Revenue
+| Page | Focus | Data Mart |
+|-------|-------|-----------|
+| Business Performance | Overall business performance | mart_business_performance |
+| Customer Funnel | Customer journey and conversion funnel | mart_customer_funnel |
+| Refund Analysis | Product refund performance | mart_refund_analysis |
+
+---
+
+# Page 1 — Business Performance
+
+![Business Performance](page1_business_performance.png)
+
+## Objective
+
+Monitor overall business performance by evaluating revenue, profitability, acquisition channels, customer devices, and product performance.
+
+### Key Performance Indicators (KPIs)
+
+- Total Revenue
 - Gross Profit
 - Gross Margin
-- Average Order Value
-- Orders
+- Average Order Value (AOV)
+- Total Orders
 
 ### Visualizations
 
@@ -40,23 +52,139 @@ Monitor overall business performance by analyzing revenue, profitability, acquis
 - Revenue by Acquisition Source
 - Revenue by Device
 - Product Profitability
+- Revenue Distribution
 
 ### Key Insights
 
-<div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><b style="">1. Revenue Consentration</b>&nbsp;</font></i></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><span>The Original Mr. Fuzzy dominates revenue contribution at 62.5% ($1.21M), making it the primary revenue driver of the business.</span></font></i><br></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><b>2.&nbsp;<span>Acquisition concentration</span></b></font></i></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><span><span><span>Gsearch is the dominant acquisition source, generating approximately $1.43M in revenue, far exceeding bsearch ($313.5K) and other sources.</span></span><br></span></font></i></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><span><span><b>3.&nbsp;<span>Device performance</span></b></span></span></font></i></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><span><span>Desktop generates 85.9% of total revenue ($1.67M), while mobile contributes only 14.1% ($272.8K).<br></span></span></font></i></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><span><span><b>4. Growth Trend</b></span></span></font></i></font></span></div><div><span><font style="font-size: 15px;"><i style=""><font style="font-size: 15px;"><font style="font-size: 15px;"></font></font></i></font></span></div><span><i><font style="font-size: 15px;">Revenue increased substantially from 2012 through 2014, reaching its highest monthly level of approximately $145K in December 2014.</font></i></span>
+- Revenue increased consistently throughout the observation period, indicating sustained business growth.
+- **The Original Mr. Fuzzy** generated approximately **62.5% of total revenue**, making it the primary revenue driver.
+- **gsearch** contributed the highest revenue among acquisition channels.
+- Desktop users generated substantially higher revenue than mobile users.
+- Revenue concentration on a single product suggests elevated product dependency risk.
 
 ### Business Recommendations
 
-(isi recommendation)
+- Prioritize inventory availability, marketing investment, and customer retention for **The Original Mr. Fuzzy** while reducing long-term dependency through product portfolio diversification.
+- Continue investing in **gsearch**, but regularly monitor conversion efficiency and profitability before increasing acquisition spending.
+- Improve the mobile shopping experience to increase revenue contribution from mobile users.
+- Replicate the acquisition and product strategies that supported revenue growth while monitoring concentration risk.
 
 ---
 
-## Page 2 — Customer Funnel
+# Page 2 — Customer Funnel
 
-...
+![Customer Funnel](page2_customer_funnel.png)
+
+## Objective
+
+Evaluate customer progression throughout the purchasing journey and identify conversion opportunities by acquisition source, device type, and product.
+
+### KPIs
+
+- Product Detail Sessions
+- Cart Sessions
+- Shipping Sessions
+- Billing Sessions
+- Purchase Sessions
+
+### Visualizations
+
+- Overall Funnel
+- Funnel by Acquisition Source
+- Funnel by Device
+- Funnel by Product
+- Product Purchase Conversion
+
+### Key Insights
+
+- Funnel conversion consistently decreases at each purchase stage.
+- Mobile users experience significantly lower purchase conversion than desktop users.
+- **socialbook (mobile)** records the weakest purchase conversion, approximately **0.83%**.
+- Conversion performance varies considerably across acquisition source and device combinations.
+
+### Business Recommendations
+
+- Prioritize investigation of the mobile purchasing journey to identify usability barriers.
+- Review landing pages and customer experience for **socialbook mobile** campaigns.
+- Evaluate marketing performance using both acquisition source and device segmentation rather than acquisition source alone.
+- Improve checkout usability to reduce abandonment in the later stages of the funnel.
 
 ---
 
-## Page 3 — Refund Analysis
+# Page 3 — Refund Analysis
 
-...
+![Refund Analysis](page3_refund_analysis.png)
+
+## Objective
+
+Analyze refund performance to identify products with elevated refund risk and estimate potential revenue recovery opportunities.
+
+### KPIs
+
+- Total Refund Amount
+- Refund Rate
+- Net Revenue After Refund
+- Gross Profit After Refund
+- Recoverable Revenue
+
+### Visualizations
+
+- Refund Rate by Product
+- Refund Amount Trend
+- Gross Profit After Refund
+- Recoverable Revenue
+- Product Profitability
+
+### Key Insights
+
+- **The Birthday Sugar Panda** exhibits the highest refund rate among all products.
+- Refunds directly reduce both net revenue and gross profit.
+- Certain products generate substantially higher recoverable revenue potential than others.
+- Improving refund performance provides an opportunity to increase profitability without acquiring additional customers.
+
+### Business Recommendations
+
+- Investigate the underlying causes of refunds for **The Birthday Sugar Panda**, including product quality, customer expectations, product descriptions, and fulfillment processes.
+- Prioritize improvement initiatives for products with the highest recoverable revenue potential.
+- Expand marketing investment toward products with stronger profit margins and lower refund rates.
+- Reduce refund rates before increasing acquisition spending to maximize profitability.
+
+---
+
+# Dashboard Development Workflow
+
+```
+Raw Tables
+      │
+      ▼
+Data Understanding
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Exploratory Data Analysis
+      │
+      ▼
+Business Data Marts
+      │
+      ▼
+Google Looker Studio Dashboard
+```
+
+---
+
+# Technology Stack
+
+- Google BigQuery
+- SQL (Standard SQL)
+- Google Looker Studio
+- GitHub
+
+---
+
+# Related Resources
+
+- Main Project Documentation → ../README.md
+- SQL Scripts → ../sql/
+- Documentation → ../documentation/
