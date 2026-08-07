@@ -170,4 +170,4 @@ These additional data sources would enable more advanced business analyses and m
 
 - [04 Exploratory Data Analysis](04_exploratory_data_analysis.md)
 - [06 Future Improvements](06_future_improvements.md)
-- [Customer Funnel Data Mart](../sql/05_mart_customer_funnel.sql)
+- [Customer Funnel Data Mart](../SQL/05_mart_customer_funnel.sql)
