@@ -37,8 +37,8 @@ Google Looker Studio Dashboard
 
 # SQL Files
 
-## 01_data_understanding.sql(../SQL/01_data_understanding.sql)
-
+## 01_data_understanding.sql
+link to = (../SQL/01_data_understanding.sql)
 ### Purpose
 
 Explore the raw dataset to understand its structure and evaluate overall data quality before performing any transformation.
