@@ -143,6 +143,5 @@ The project enables stakeholders to:
 - [02 Data Understanding](02_data_understanding.md)
 - [03 Data Cleaning](03_data_cleaning.md)
 - [04 Exploratory Data Analysis](04_exploratory_data_analysis.md)
-- [05 Business Recommendations](05_business_recommendations.md)
-- [06 Limitations](06_limitations.md)
-- [07 Future Improvements](07_future_improvements.md)
+- [05 Limitations](05_limitations.md)
+- [06 Future Improvements](06_future_improvements.md)
