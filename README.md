@@ -172,14 +172,22 @@ View the interactive dashboard here:
 
 ## Business Recommendations
 
+### Business Performance
+
 - Prioritize retention, availability, and performance of The Original Mr. Fuzzy because the product accounts for 62.5% of total revenue.
 - Continue monitoring gsearch performance and evaluate whether its high revenue contribution is supported by sustainable conversion and profitability before increasing.
 - Investigate the substantially lower mobile revenue contribution. Improving the mobile customer experience could provide an opportunity to diversify revenue beyond desktop.
 - Identify the factors behind the strong revenue growth through 2014 and replicate the successful product and acquisition strategies while monitoring concentration risk.
+
+### Customer Funnel
+
 - Maintain gsearch as the primary acquisition channel due to its leading session and purchase volume while continuing to monitor conversion efficiency.
 - Prioritize investigation of the mobile funnel, as mobile conversion is substantially lower across all acquisition sources.
 - Evaluate the landing page, user experience, and traffic quality of socialbook mobile, where purchase conversion is only 0.83%.
 - Use acquisition source and device combinations as the basis for campaign evaluation rather than comparing acquisition channels only at the aggregate level.
+
+### Refund Analysis
+
 - Maintain product quality, inventory availability, and customer satisfaction for The Original Mr. Fuzzy to safeguard the business's largest revenue contributor.
 - Investigate the root causes of refunds for The Birthday Sugar Panda by reviewing product quality, customer expectations, product descriptions, and fulfillment processes.
 - Expand marketing efforts for products with stronger gross margins to improve overall profitability without relying solely on higher sales volume.
