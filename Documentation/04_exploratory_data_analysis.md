@@ -162,4 +162,4 @@ Rather than serving as a final reporting layer, the EDA phase functioned as the 
 - [Business Performance Data Mart](../SQL/04_mart_business_performance.sql)
 - [Customer Funnel Data Mart](../SQL/05_mart_customer_funnel.sql)
 - [Refund Analysis Data Mart](../SQL/06_mart_refund_analysis.sql)
-- [Dashboard Documentation](../dashboard/README.md)
+- [Dashboard Documentation](../Dashboard/README.md)
