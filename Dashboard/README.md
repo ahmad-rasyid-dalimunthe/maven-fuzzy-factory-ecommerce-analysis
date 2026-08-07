@@ -16,5 +16,11 @@ Business Performance Overview
 ### Page 2
 Customer Acquisition & Product Funnel
 
+![Dashboard](../Images/dashboard_page2_customer_funnel.png)
+
+
 ### Page 3
 Refund Analysis
+
+![Dashboard](../Images/dashboard_page3_refund_analysis.png)
+
