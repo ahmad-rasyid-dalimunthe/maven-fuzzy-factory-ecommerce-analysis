@@ -154,6 +154,6 @@ Most transformations focused on business standardization rather than data repair
 
 # Related Resources
 
-- [SQL Script – Data Cleaning](../sql/02_data_cleaning.sql)
+- [SQL Script – Data Cleaning](../SQL/02_data_cleaning.sql)
 - [02 Data Understanding](02_data_understanding.md)
 - [04 Exploratory Data Analysis](04_exploratory_data_analysis.md)
