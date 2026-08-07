@@ -30,7 +30,7 @@ The dashboard transforms raw transactional e-commerce data into actionable busin
 
 # Page 1 — Business Performance
 
-![Business Performance](page1_business_performance.png)
+<img src="../Images/dashboard_page1_business_performance.png" width="70%">
 
 ## Objective
 
@@ -72,7 +72,7 @@ Monitor overall business performance by evaluating revenue, profitability, acqui
 
 # Page 2 — Customer Funnel
 
-![Customer Funnel](page2_customer_funnel.png)
+<img src="../Images/dashboard_page2_customer_funnel.png" width="70%">
 
 ## Objective
 
@@ -112,7 +112,7 @@ Evaluate customer progression throughout the purchasing journey and identify con
 
 # Page 3 — Refund Analysis
 
-![Refund Analysis](page3_refund_analysis.png)
+<img src="../Images/dashboard_page3_refund_analysis.png" width="70%">
 
 ## Objective
 
