@@ -15,9 +15,7 @@ The dashboard transforms raw transactional e-commerce data into actionable busin
 > Full Interactive Dashboard:
 > (https://datastudio.google.com/reporting/90f69ea2-54da-4abb-a221-e1eeea32f6f0)
 
-<img src="../Images/dashboard_page1_business_performance.png" width="33%">
-<img src="../Images/dashboard_page2_customer_funnel.png" width="33%">
-<img src="../Images/dashboard_page3_refund_analysis.png" width="33%">
+<img src="../Images/dashboard_page1_business_performance.png" width="33%"> <img src="../Images/dashboard_page2_customer_funnel.png" width="33%"> <img src="../Images/dashboard_page3_refund_analysis.png" width="33%">
 ---
 
 # Dashboard Structure
