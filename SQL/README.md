@@ -12,7 +12,7 @@ The scripts follow a structured analytics workflow, beginning with raw data expl
 Raw Dataset
      │
      ▼
-01_data_understanding.sql
+[01_data_understanding.sql](01_data_understanding.sql)
      │
      ▼
 02_data_cleaning.sql
