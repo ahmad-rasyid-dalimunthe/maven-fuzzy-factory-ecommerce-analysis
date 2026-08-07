@@ -111,21 +111,6 @@ Three business-focused dashboards were developed.
 | Version Control | GitHub |
 | Documentation | Markdown |
 
----
-
-# Repository Structure
-
-```
-maven-fuzzy-factory-ecommerce-analysis/
-
-├── dashboard/
-├── dataset/
-├── documentation/
-├── images/
-├── sql/
-├── README.md
-└── LICENSE
-```
 
 ---
 
