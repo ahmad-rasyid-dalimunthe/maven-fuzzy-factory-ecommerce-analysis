@@ -1,20 +1,21 @@
--- =====================================================
+-- =============================================================
 -- Project      : Maven Fuzzy Factory E-commerce Analysis
 -- File         : 01_data_understanding.sql
 -- Author       : Ahmad Rasyid Dalimunthe
 -- SQL Engine   : Google BigQuery
 --
 -- Description:
--- Initial exploration of the raw dataset to understand
--- table structures, data volume, date coverage,
--- primary key integrity, referential integrity,
--- categorical values, and missing values.
--- =====================================================
+-- This script performs an initial assessment of the raw dataset
+-- to understand its structure, data volume, temporal coverage,
+-- key integrity, table relationships, categorical variables,
+-- and overall data quality before any transformation or analysis.
+-- =============================================================
 
--- =====================================================
+-- =============================================================
 -- 1. DATASET OVERVIEW
--- =====================================================
--- Count the total number of records in each raw table.
+-- =============================================================
+-- Count the number of records in each raw table to understand
+-- dataset size and relative scale.
 
 SELECT
     'website_sessions' AS table_name,
@@ -55,12 +56,14 @@ SELECT
     'products',
     COUNT(*)
 FROM `maven_fuzzy_Factory.products`
+ORDER BY row_count DESC;
 
 
--- =====================================================
+-- =============================================================
 -- 2. DATE COVERAGE
--- =====================================================
--- Identify the available time period across transactional tables.
+-- =============================================================
+-- Identify the available time period covered by each
+-- transactional table.
 
 SELECT
     'website_sessions' AS table_name,
@@ -94,13 +97,12 @@ FROM `maven_fuzzy_Factory.order_item_refunds`
 
 ORDER BY min_date;
 
-ORDER BY row_count DESC;
 
-
--- =====================================================
+-- =============================================================
 -- 3. PRIMARY KEY VALIDATION
--- =====================================================
--- Verify that each primary key contains unique values.
+-- =============================================================
+-- Verify that every table contains unique primary keys
+-- and identify duplicate records if they exist.
 
 SELECT
     'website_sessions' AS table_name,
@@ -155,11 +157,12 @@ SELECT
 FROM `maven_fuzzy_Factory.products`;
 
 
--- =====================================================
+-- =============================================================
 -- 4. REFERENTIAL INTEGRITY VALIDATION
--- =====================================================
--- Verify that all foreign key relationships are valid
--- and no orphan records exist.
+-- =============================================================
+-- Verify that foreign key relationships are preserved
+-- across all transactional tables.
+
 
 -- 4.1 Orders → Website Sessions
 
@@ -217,7 +220,7 @@ FROM `maven_fuzzy_Factory.website_sessions`
 GROUP BY device_type
 ORDER BY sessions DESC;
 
--- 5.2 Traffic Sources and Campaigns
+-- 5.2 UTM Sources and Campaigns
 
 SELECT
     utm_source,
@@ -229,7 +232,7 @@ GROUP BY
     utm_campaign
 ORDER BY sessions DESC;
 
--- 5.3 Website URLs
+-- 5.3 Pagevew URLs
 
 SELECT
     pageview_url,
@@ -239,20 +242,40 @@ GROUP BY pageview_url
 ORDER BY total_pageviews DESC;
 
 
--- =====================================================
+-- =============================================================
 -- 6. MISSING VALUE ASSESSMENT
--- =====================================================
--- Assess SQL NULL values and string 'NULL' values
--- across all raw tables.
-
-WITH missing_values AS (
+-- =============================================================
+-- Review SQL NULL values and literal 'NULL' strings in
+-- critical fields across all raw tables.
+--
+-- Note:
+-- The dataset stores missing marketing attribution values
+-- as the literal string 'NULL' instead of SQL NULL.
+-- =============================================================
 
 SELECT
     'website_sessions' AS table_name,
+
     COUNT(*) AS total_rows,
-    COUNTIF(website_session_id IS NULL) AS sql_null_primary_key,
-    COUNTIF(website_session_id = 'NULL') AS text_null_primary_key,
-    COUNTIF(created_at IS NULL) AS sql_null_created_at
+
+    -- Primary Key
+    COUNTIF(website_session_id IS NULL) AS sql_null_session_id,
+
+    -- Timestamp
+    COUNTIF(created_at IS NULL) AS sql_null_created_at,
+
+    -- Marketing Attribution
+    COUNTIF(utm_source IS NULL) AS sql_null_utm_source,
+    COUNTIF(utm_source = 'NULL') AS text_null_utm_source,
+
+    COUNTIF(utm_campaign IS NULL) AS sql_null_utm_campaign,
+    COUNTIF(utm_campaign = 'NULL') AS text_null_utm_campaign,
+
+    COUNTIF(utm_content IS NULL) AS sql_null_utm_content,
+    COUNTIF(utm_content = 'NULL') AS text_null_utm_content,
+
+    COUNTIF(http_referer IS NULL) AS sql_null_http_referer,
+    COUNTIF(http_referer = 'NULL') AS text_null_http_referer
 
 FROM `maven_fuzzy_Factory.website_sessions`
 
@@ -260,10 +283,24 @@ UNION ALL
 
 SELECT
     'website_pageviews',
+
     COUNT(*),
+
     COUNTIF(website_pageview_id IS NULL),
-    COUNTIF(CAST(website_pageview_id AS STRING) = 'NULL'),
-    COUNTIF(created_at IS NULL)
+
+    COUNTIF(created_at IS NULL),
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL,
+
+    COUNTIF(pageview_url IS NULL),
+    COUNTIF(pageview_url = 'NULL')
 
 FROM `maven_fuzzy_Factory.website_pageviews`
 
@@ -271,10 +308,24 @@ UNION ALL
 
 SELECT
     'orders',
+
     COUNT(*),
+
     COUNTIF(order_id IS NULL),
-    COUNTIF(CAST(order_id AS STRING) = 'NULL'),
-    COUNTIF(created_at IS NULL)
+
+    COUNTIF(created_at IS NULL),
+
+    COUNTIF(website_session_id IS NULL),
+    0,
+
+    COUNTIF(primary_product_id IS NULL),
+    0,
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL
 
 FROM `maven_fuzzy_Factory.orders`
 
@@ -282,10 +333,24 @@ UNION ALL
 
 SELECT
     'order_items',
+
     COUNT(*),
+
     COUNTIF(order_item_id IS NULL),
-    COUNTIF(CAST(order_item_id AS STRING) = 'NULL'),
-    COUNTIF(created_at IS NULL)
+
+    COUNTIF(created_at IS NULL),
+
+    COUNTIF(order_id IS NULL),
+    0,
+
+    COUNTIF(product_id IS NULL),
+    0,
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL
 
 FROM `maven_fuzzy_Factory.order_items`
 
@@ -293,10 +358,24 @@ UNION ALL
 
 SELECT
     'order_item_refunds',
+
     COUNT(*),
+
     COUNTIF(order_item_refund_id IS NULL),
-    COUNTIF(CAST(order_item_refund_id AS STRING) = 'NULL'),
-    COUNTIF(created_at IS NULL)
+
+    COUNTIF(created_at IS NULL),
+
+    COUNTIF(order_item_id IS NULL),
+    0,
+
+    COUNTIF(order_id IS NULL),
+    0,
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL
 
 FROM `maven_fuzzy_Factory.order_item_refunds`
 
@@ -304,27 +383,55 @@ UNION ALL
 
 SELECT
     'products',
+
     COUNT(*),
+
     COUNTIF(product_id IS NULL),
-    COUNTIF(CAST(product_id AS STRING) = 'NULL'),
-    COUNTIF(created_at IS NULL)
+
+    COUNTIF(created_at IS NULL),
+
+    COUNTIF(product_name IS NULL),
+    COUNTIF(product_name = 'NULL'),
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL,
+
+    NULL,
+    NULL
 
 FROM `maven_fuzzy_Factory.products`
 
-)
-
-SELECT *
-FROM missing_values;
+ORDER BY table_name;
 
 
 
--- =====================================================
+-- =============================================================
 -- DATA UNDERSTANDING SUMMARY
--- =====================================================
--- Key observations:
--- • All primary keys are unique.
--- • No orphan records were found across table relationships.
--- • No SQL NULL values were detected in critical identifier fields.
--- • Several traffic attribution fields contain the string 'NULL'
---   rather than SQL NULL, requiring standardization during data cleaning.
--- • Dataset spans approximately three years of e-commerce activity.
+-- =============================================================
+--
+-- Key Findings
+--
+-- • All primary keys are unique, indicating no duplicate
+--   records across the raw tables.
+--
+-- • No orphan records were identified, confirming that all
+--   foreign key relationships are intact.
+--
+-- • Critical identifier fields contain no SQL NULL values.
+--
+-- • Marketing attribution fields use the literal string
+--   'NULL' instead of SQL NULL values, requiring
+--   standardization during the data cleaning stage.
+--
+-- • The dataset captures the complete customer journey,
+--   including website sessions, pageviews, orders,
+--   order items, refunds, and product information.
+--
+-- These observations confirm that the dataset is suitable
+-- for downstream cleaning, exploratory analysis,
+-- feature engineering, and dashboard development.
+--
+-- =============================================================
