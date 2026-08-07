@@ -56,7 +56,7 @@ The documentation should be read together with the other project components.
 | Project Component | Location |
 |------------------|----------|
 | Main Project Overview | [../README.md](../README.md) |
-| SQL Scripts | [../sql/README.md](../sql/README.md) |
+| SQL Scripts | [../SQL/README.md](../SQL/README.md) |
 | Dashboard Documentation | [../dashboard/README.md](../dashboard/README.md) |
 | Images | [../images/](../images/) |
 
@@ -99,4 +99,3 @@ This documentation follows several principles:
 - Business-oriented explanations rather than technical implementation only.
 - Direct linkage between insights and recommendations.
 - Transparent documentation of project limitations and assumptions.
-- 
