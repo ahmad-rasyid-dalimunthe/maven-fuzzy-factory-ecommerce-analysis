@@ -1,26 +1,62 @@
+# Dashboard Overview
+
+## Dashboard Objective
+
+This interactive dashboard provides business insights into Maven Fuzzy Factory's e-commerce performance across three key analytical areas:
+
+- Business Performance
+- Customer Funnel
+- Refund Analysis
+
+The dashboard was developed in Google Looker Studio using curated BigQuery data marts.
+
 # Interactive Dashboard
-
-The dashboard was developed using Google Looker Studio.
-
 ## Live Dashboard
 
 👉 [https://datastudio.google.com/reporting/90f69ea2-54da-4abb-a221-e1eeea32f6f0]
 
-## Dashboard Pages
+---
 
-### Page 1
-Business Performance Overview
+# Dashboard Pages
 
-![Dashboard](../Images/dashboard_page1_business_performance.png)
+## Page 1 — Business Performance
 
-### Page 2
-Customer Acquisition & Product Funnel
+### Objective
 
-![Dashboard](../Images/dashboard_page2_customer_funnel.png)
+Monitor overall business performance by analyzing revenue, profitability, acquisition channels, product contribution, and sales trends.
 
+### KPIs
 
-### Page 3
-Refund Analysis
+- Revenue
+- Gross Profit
+- Gross Margin
+- Average Order Value
+- Orders
 
-![Dashboard](../Images/dashboard_page3_refund_analysis.png)
+### Visualizations
 
+- Revenue Trend
+- Revenue by Product
+- Revenue by Acquisition Source
+- Revenue by Device
+- Product Profitability
+
+### Key Insights
+
+(isi insight)
+
+### Business Recommendations
+
+(isi recommendation)
+
+---
+
+## Page 2 — Customer Funnel
+
+...
+
+---
+
+## Page 3 — Refund Analysis
+
+...
