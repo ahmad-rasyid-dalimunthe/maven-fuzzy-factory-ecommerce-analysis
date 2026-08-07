@@ -70,7 +70,7 @@ Monitor overall business performance by evaluating revenue, profitability, acqui
 
 ---
 
-# Page 2 — Customer Funnel
+# [Page 2 — Customer Funnel](../Images/dashboard_page2_customer_funnel.png)
 
 <img src="../Images/dashboard_page2_customer_funnel.png" width="70%">
 
@@ -110,7 +110,7 @@ Evaluate customer progression throughout the purchasing journey and identify con
 
 ---
 
-# Page 3 — Refund Analysis
+# [Page 3 — Refund Analysis](../Images/dashboard_page3_refund_analysis.png)
 
 <img src="../Images/dashboard_page3_refund_analysis.png" width="70%">
 
@@ -184,6 +184,6 @@ Google Looker Studio Dashboard
 
 # Related Resources
 
-- Main Project Documentation → ../README.md
-- SQL Scripts → ../sql/
-- Documentation → ../documentation/
+- Main Project Documentation → [../README.md](../README.md)
+- SQL Scripts → [../sql/](../sql/)
+- Documentation → [../documentation/](../documentation/)
