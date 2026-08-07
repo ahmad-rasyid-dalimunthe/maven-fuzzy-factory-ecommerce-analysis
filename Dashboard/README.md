@@ -28,7 +28,7 @@ The dashboard transforms raw transactional e-commerce data into actionable busin
 
 ---
 
-# Page 1 — Business Performance
+# [Page 1 — Business Performance](../Images/dashboard_page1_business_performance.png)
 
 <img src="../Images/dashboard_page1_business_performance.png" width="70%">
 
