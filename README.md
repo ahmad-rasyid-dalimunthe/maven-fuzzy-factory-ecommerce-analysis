@@ -195,23 +195,6 @@ View the interactive dashboard here:
   
 ---
 
-## Repository Structure
-
-```
-Maven-Fuzzy-Factory-Analysis
-│
-├── dataset/
-├── dashboard/
-├── images/
-├── sql/
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
----
-
 ## SQL Workflow
 
 ```
