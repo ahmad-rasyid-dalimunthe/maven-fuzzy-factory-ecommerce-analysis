@@ -207,5 +207,5 @@ Future enhancements should focus on expanding data availability, automating data
 # Related Resources
 
 - [05 Limitations](05_limitations.md)
-- [Dashboard Documentation](../dashboard/README.md)
+- [Dashboard Documentation](../Dashboard/README.md)
 - [Main Project README](../README.md)
