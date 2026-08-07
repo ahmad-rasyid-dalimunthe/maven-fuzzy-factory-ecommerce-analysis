@@ -54,7 +54,7 @@ Additional documentation is available in the **dataset** folder.
 
 ## Project Architecture
 
-![Project Architecture](../Images/project_architecture_and_data_pipeline.png)
+![](../Images/project_architecture_and_data_pipeline.png)
 ---
 
 ## Entity Relationship Diagram (ERD)
