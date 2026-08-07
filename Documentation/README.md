@@ -57,8 +57,8 @@ The documentation should be read together with the other project components.
 |------------------|----------|
 | Main Project Overview | [../README.md](../README.md) |
 | SQL Scripts | [../SQL/README.md](../SQL/README.md) |
-| Dashboard Documentation | [../dashboard/README.md](../dashboard/README.md) |
-| Images | [../images/](../images/) |
+| Dashboard Documentation | [../dashboard/README.md](../Dashboard/README.md) |
+| Images | [../images/](../Images/) |
 
 ---
 
