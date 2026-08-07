@@ -4,7 +4,7 @@ This project uses the Maven Fuzzy Factory e-commerce dataset.
 
 The dataset consists of six relational tables that capture website traffic, customer behavior, transactions, product information, and refunds.
 
-## Source Tables
+[## Source Tables](../Dataset/source_tables.md)
 
 | Table | Description |
 |--------|-------------|
@@ -17,7 +17,7 @@ The dataset consists of six relational tables that capture website traffic, cust
 
 The dataset is transformed into analytical data marts using SQL in Google BigQuery before being visualized in Looker Studio.
 
-## Entity Relationship Diagram
+[## Entity Relationship Diagram](../Images/entity_relationship_diagram.png)
 
 ![ERD](../Images/entity_relationship_diagram.png)
 
