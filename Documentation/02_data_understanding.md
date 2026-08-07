@@ -171,5 +171,5 @@ Specifically:
 
 # Related Resources
 
-- [SQL Script – Data Understanding](../sql/01_data_understanding.sql)
+- [SQL Script – Data Understanding](../SQL/01_data_understanding.sql)
 - [03 Data Cleaning](03_data_cleaning.md)
